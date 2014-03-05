@@ -12,4 +12,4 @@ jekyll server -w
 ```
 And access to [http://localhost:4000](http://localhost:4000) via your browser.
 
-see [index.md] for more information.
+see [index.md](index.md) for more information.
