@@ -14,7 +14,7 @@ module.exports = function(grunt) {
       production: less_parameter
     },
     watch: {
-      files: ['./less/*.less', 'Gruntfile.js'],
+      files: ['./less/*.less', 'Gruntfile.js', './javascripts/*.js'],
       tasks: ['build']
     },
     jshint: {
