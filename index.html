@@ -2,16 +2,28 @@
 <html>
   <head>
     <title>jsk-ros-pkg.github.io</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- include bootstrap -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script id="repo-info-short" type="text/template">
+      <li><a href="http://github.com/jsk-ros-pkg/<%- name %>"><%= name %></a></li>
+    </script>
   </head>
   <body>
     <div class="container">
-      <h1>hello world</h1>
+      <div class="page-header">
+        <h1>jsk-ros-pkg.github.io</h1>
+      </div>
+    </div>
+    <div class="container">
+      <ul id="repository-list">
+      </ul>
     </div>
   </body>
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/ejs/ejs.min.js"></script>
+  <script type="text/javascript" src="bower_components/lodash/dist/lodash.min.js"></script>
   <script type="text/javascript" src="javascripts/index.js"></script>
 </html>
