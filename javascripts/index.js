@@ -5,13 +5,13 @@ $(function() {
   var END_POINT_PREFIX = 'https://api.github.com/';
   function githubAPI(api) {
     var url = END_POINT_PREFIX + api;
-    var deferred = new $.Deferred;
+    var deferred = new $.Deferred();
     console.log('accessing to ' + url);
     $.getJSON(url, function(result) {
       deferred.resolve(result);
     });
-    return deferred.promise()
-  };
+    return deferred.promise();
+  }
   var repo_info_short_ejs = $('#repo-info-short').html();
   
   var ORG_NAME = 'jsk-ros-pkg';
@@ -24,7 +24,7 @@ $(function() {
         });
         console.log(repos.length + ' repository at ' + org_name);
         var all_request = _.map(repos, function(repo) {
-          var deferred = new $.Deferred;
+          var deferred = new $.Deferred();
           githubAPI('repos/' + org_name + '/' + repo.name + '/pulls')
             .then(function(pulls) {
               deferred.resolve({repo: repo, pulls: pulls});
@@ -44,7 +44,7 @@ $(function() {
           });
         });
       });
-  };
+  }
   listRepository('jsk-ros-pkg', '#jsk-ros-pkg-info');
   listRepository('euslisp', '#euslisp-info');
   listRepository('start-jsk', '#start-jsk-info');
