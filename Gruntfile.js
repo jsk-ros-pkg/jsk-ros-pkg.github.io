@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       },
       files: [
         'Gruntfile.js',
-        '../www/rwt_plot.js'
+        '../javascripts/*.js'
       ]
     }
   });
