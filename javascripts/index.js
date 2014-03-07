@@ -46,5 +46,6 @@ $(function() {
       });
   };
   listRepository('jsk-ros-pkg', '#jsk-ros-pkg-info');
+  listRepository('euslisp', '#euslisp-info');
   listRepository('start-jsk', '#start-jsk-info');
 });
