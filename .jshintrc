@@ -2,7 +2,9 @@
   "globals": {
     "$": true,
     "window": true,
-    "module": true
+    "module": true,
+    "_": true,
+    "ejs": true
   },
   "curly": true,
   "eqeqeq": true,
