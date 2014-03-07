@@ -16,6 +16,15 @@ module.exports = function(grunt) {
     watch: {
       files: ['./less/*.less', 'Gruntfile.js'],
       tasks: ['build']
+    },
+    jshint: {
+      options: {
+        jshintrc: '.jshintrc'
+      },
+      files: [
+        'Gruntfile.js',
+        '../www/rwt_plot.js'
+      ]
     }
   });
 
@@ -26,7 +35,6 @@ module.exports = function(grunt) {
     }
   }
   
-  grunt.registerTask('build', ['jshint']);
+  grunt.registerTask('build', ['jshint', 'less']);
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('doc', ['jsdoc']);
 };
