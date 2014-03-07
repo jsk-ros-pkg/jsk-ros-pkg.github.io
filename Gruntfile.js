@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       },
       files: [
         'Gruntfile.js',
-        '../javascripts/*.js'
+        'javascripts/*.js'
       ]
     }
   });
