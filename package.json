@@ -1,0 +1,8 @@
+{
+  "name": "jsk-ros-pkg.github.io",
+  "version": "0.0.1",
+  "private": false,
+  "devDependencies": {
+    "bower": "*"
+  }
+}

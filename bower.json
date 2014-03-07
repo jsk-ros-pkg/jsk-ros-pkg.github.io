@@ -1,0 +1,11 @@
+{
+  "name": "markdown-chat",
+  "version": "0.0.1",
+  "dependencies": {
+    "ejs": "*",
+    "less": "*",
+    "lodash": "*",
+    "jquery": "*",
+    "bootstrap": "*"
+  }
+}
